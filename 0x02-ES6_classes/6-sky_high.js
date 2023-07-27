@@ -5,7 +5,6 @@ export default class SkyHighBuilding extends Building {
     // Calling the parent class constructor using super()
     super(sqft);
 
-    // Storing floor attributes with underscores in child class
     this._floors = floors;
   }
 
@@ -16,6 +15,6 @@ export default class SkyHighBuilding extends Building {
 
   // Overiding evacuationWarningMessage method
   evacuationWarningMessage() {
-    return `Evacuate slowly the ${this._floors} floors.`;
+    return `Evacuate slowly the ${this._floors} floors`;
   }
 }
