@@ -21,3 +21,7 @@ class Teacher implements TeacherInterface {
   getCoffeeBreak = () : string => 'Cannot have a break';
   workTeacherTasks = () : string => 'Getting to work';
 }
+
+const createEmployee = (salary: number | string): Teacher | Director => {
+  return typeof salary === 'number' && salary < 500 ? new Teacher() : new Director();
+}
