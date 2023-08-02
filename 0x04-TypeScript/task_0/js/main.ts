@@ -26,18 +26,26 @@ const studentsList: Student[] = [student1, student2];
 const table = document.createElement('table');
 const tbody = document.createElement('tbody');
 
+table.style.background = "lightgray";
+table.appendChild(tbody);
+
 studentlist.forEach((student) => {
   const row = document.createElement("tr");
   const firstNameCell = document.createElement("td");
   const locationCell = document.createElement("td");
 
-  firstNameCell.text = student.firstName;
-  locationCell.text = student.location;
+  firstNameCell.textContent = student.firstName;
+  locationCell.textContent = student.location;
+
+  firstNameCell.style.border = "2px solid white";
+  locationCell.style.border = "2px solid white";
+  firstNameCell.style.padding = "4px";
+  locationCell.style.padding = "4px";
 
   row.appendChild(firstNameCell);
   row.appendChild(locationCell);
 
   tbody.appendChild(row);
 });
-table.appendChild(tbody);
+
 document.body.appendChild(table);
