@@ -13,8 +13,8 @@ const student1: Student = {
 }
 
 const student2: Student = {
- firstName: 'Flavy'
- lastName: 'Kasi'
+ firstName: 'Flavy',
+ lastName: 'Kasi',
  age: 25,
  location: 'Mombasa'
 }
@@ -29,7 +29,7 @@ const tbody = document.createElement('tbody');
 table.style.background = "lightgray";
 table.appendChild(tbody);
 
-studentlist.forEach((student) => {
+studentsList.forEach((student) => {
   const row = document.createElement("tr");
   const firstNameCell = document.createElement("td");
   const locationCell = document.createElement("td");
