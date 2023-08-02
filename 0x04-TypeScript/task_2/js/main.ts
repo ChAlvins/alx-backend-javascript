@@ -15,3 +15,9 @@ class Director implements DirectorInterface {
   getToWork = () : string => 'Getting a coffee break';
   workDirectorTasks = () : string => 'Getting to director tasks';
 }
+
+class Teacher implements TeacherInterface {
+  workFromHome = () : string => 'Cannot work from home';
+  getCoffeeBreak = () : string => 'Cannot have a break';
+  workTeacherTasks = () : string => 'Getting to work';
+}
