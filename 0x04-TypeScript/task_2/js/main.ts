@@ -25,3 +25,5 @@ class Teacher implements TeacherInterface {
 const createEmployee = (salary: number | string): Teacher | Director => {
   return typeof salary === 'number' && salary < 500 ? new Teacher() : new Director();
 }
+
+const isDirector = (employee: Teacher | Director): employee is Director => employee instanceof Director;
