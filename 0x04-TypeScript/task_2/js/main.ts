@@ -22,8 +22,13 @@ class Teacher implements TeacherInterface {
   workTeacherTasks = () : string => 'Getting to work';
 }
 
-const createEmployee = (salary: number | string): Teacher | Director => {
+export const createEmployee = (salary: number | string): Teacher | Director => {
   return typeof salary === 'number' && salary < 500 ? new Teacher() : new Director();
 }
 
-const isDirector = (employee: Teacher | Director): employee is Director => employee instanceof Director;
+export const isDirector = (employee: Teacher | Director): employee is Director => employee instanceof Director;
+
+export const executeWork = (employee: Teacher | Director): void => {
+  const result = employee instanceof Teacher? employee.workTeacherTasks() : employee.workDirectorTasks();
+    console.log(result)
+}
