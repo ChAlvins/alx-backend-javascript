@@ -3,28 +3,31 @@ const fs = require('fs');
 function countStudents(fileName) {
   try {
     const fileContents = fs.readFileSync(fileName, 'utf-8');
-    const lines = fileContents.trim().split('\n').slice(1);
+    const lines = fileContents.trim().split('\n');
 
     const students = {};
+    const fields = {};
 
-    lines.forEach(line => {
+    for (const line of lines) {
       const [firstName, , , field] = line.split(',').map(item => item.trim());
-      
+
       if (firstName && field) {
-        students[field] = students[field] || [];
+        if (!students[field]) {
+          students[field] = [];
+        }
         students[field].push(firstName);
+
+        fields[field] = (fields[field] || 0) + 1;
       }
-    });
-    
-    const totalStudents = lines.length;
-    
+    }
+
+    const totalStudents = lines.length - 1; // Subtract 1 for the header
+
     console.log(`Number of students: ${totalStudents}`);
-    
+
     for (const field in students) {
       if (students.hasOwnProperty(field)) {
-        const numStudents = students[field].length;
-        const studentList = students[field].join(', ');
-        console.log(`Number of students in ${field}: ${numStudents}. List: ${studentList}`);
+        console.log(`Number of students in ${field}: ${fields[field]}. List: ${students[field].join(', ')}`);
       }
     }
   } catch (error) {
