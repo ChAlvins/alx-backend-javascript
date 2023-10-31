@@ -1,18 +1,25 @@
 ﻿
-# [📖 alx-backend-javascript](https://github.com/ChAlvins/alx-backend-javascript)
+# [0x04. Files manager](https://github.com/ChAlvins/READS/tree/main/alx-files_manager#0x04-files-manager)
 
-## [📃 Concepts](https://github.com/ChAlvins/alx-backend-javascript#concepts)
+This project is a summary of : 
+- Back-end
+- JavaScript
+- ES6
+- NoSQL
+- MongoDB
+- Redis
+- NodeJS
+- ExpressJS
+- Kue
+## [Read](https://github.com/ChAlvins/READS/tree/main/alx-files_manager#resources)
 
-- All about JavaScript 
-
-
-# [💻 Projects](https://github.com/ChAlvins/alx-backend-javascript#projects)
-
-
-- [0x00-ES6_basic](https://github.com/ChAlvins/alx-backend-javascript/tree/main/0x00-ES6_basic "0x00-ES6_basic")
-- [0x01-ES6_promise](https://github.com/ChAlvins/alx-backend-javascript/tree/main/0x01-ES6_promise "0x01-ES6_promise")
-- [0x02-ES6_classes](https://github.com/ChAlvins/alx-backend-javascript/tree/main/0x02-ES6_classes "0x02-ES6_classes")
-- [0x03-ES6_data_manipulation](https://github.com/ChAlvins/alx-backend-javascript/tree/main/0x03-ES6_data_manipulation "0x03-ES6_data_manipulation")
-- [0x04-TypeScript](https://github.com/ChAlvins/alx-backend-javascript/tree/main/0x04-TypeScript "0x04-TypeScript")
-- [0x05-Node_JS_basic](https://github.com/ChAlvins/alx-backend-javascript/tree/main/0x05-Node_JS_basic "0x05-Node_JS_basic")
-- [0x06-unittests_in_js](https://github.com/ChAlvins/alx-backend-javascript/tree/main/0x06-unittests_in_js "0x06-unittests_in_js")
+-   [Node JS getting started](https://nodejs.org/en/docs/guides/getting-started-guide)
+-   [Process API doc](https://node.readthedocs.io/en/latest/api/process/)
+-   [Express getting started](https://expressjs.com/en/starter/installing.html)
+-   [Mocha documentation](https://mochajs.org/)
+-   [Nodemon documentation](https://github.com/remy/nodemon#nodemon)
+-   [MongoDB](https://github.com/mongodb/node-mongodb-native)
+-   [Bull](https://github.com/OptimalBits/bull)
+-   [Image thumbnail](https://www.npmjs.com/package/image-thumbnail)
+-   [Mime-Types](https://www.npmjs.com/package/mime-types)
+-   [Redis](https://github.com/redis/node-redis)
